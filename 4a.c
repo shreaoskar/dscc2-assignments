@@ -1,9 +1,7 @@
 #include <stdio.h>
 #include <math.h>
-#include "shreaoskar.h"
 
-int main(int argc, char **argv) {
-    intro(argv[0]);
+int main() {
     int x, n, iterator;
     double sum = 0;
 
@@ -18,7 +16,5 @@ int main(int argc, char **argv) {
     }
 
     printf("Sum of the series S = 1 + x + x^2 + ... up to %d terms is: %.2lf", n, sum);
-
-    author();
     return 0;
 }

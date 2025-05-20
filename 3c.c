@@ -1,10 +1,8 @@
 #include <stdio.h>
-#include "shreaoskar.h"
 
 unsigned int factorial(unsigned int num);
 
-int main(int argc, char **argv) {
-    intro(argv[0]);
+int main() {
     unsigned int n, temp, digit, sum = 0;
 
     printf("Enter a number: ");
@@ -23,7 +21,6 @@ int main(int argc, char **argv) {
     else
         printf("%d is not a Krishnamurthy number.", n);
 
-    author();
     return 0;
 }
 

@@ -1,8 +1,7 @@
 #include <ctype.h>
 #include <stdio.h>
-#include "shreaoskar.h"
-int main(int argc, char **argv) {
-    intro(argv[0]);
+
+int main() {
     int temperature_in, temperature_out;
     char option;
 
@@ -23,6 +22,5 @@ int main(int argc, char **argv) {
     }
 
     printf("Output Temperature in %c: %d", option, temperature_out);
-    author();
     return 0;
 }

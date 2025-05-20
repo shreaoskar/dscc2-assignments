@@ -1,8 +1,6 @@
 #include <stdio.h>
-#include "shreaoskar.h"
 
-int main(int argc, char **argv) {
-    intro(argv[0]);
+int main() {
     float marks[4];
     float totalMarks = 0.0, average, tmpf;
     char grade;
@@ -36,6 +34,5 @@ int main(int argc, char **argv) {
     } else grade = 'O';
 
     printf("Total Marks: %.1f\nAverage: %.1f\nGrade: %c", totalMarks, average, grade);
-    author();
     return 0;
 }

@@ -1,9 +1,6 @@
 #include <stdio.h>
-#include "shreaoskar.h"
 
-int main(int argc, char **argv) {
-    intro(argv[0]);
-
+int main() {
     int number, x, y = 0;
     printf("Enter Your Number: ");
     scanf("%d", &number);
@@ -19,7 +16,5 @@ int main(int argc, char **argv) {
     } else {
         printf("Your number is not a Palindrome.");
     }
-
-    author();
     return 0;
 }

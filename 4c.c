@@ -1,8 +1,6 @@
-#include "shreaoskar.h"
 #include <stdio.h>
 
-int main(int argc, char **argv) {
-    intro(argv[0]);
+int main() {
     int n;
     double x, sum = 1.0;
     double term = 1.0;
@@ -19,7 +17,5 @@ int main(int argc, char **argv) {
     }
 
     printf("The summation of the series for e^%.2lf up to %d terms is: %.3lf", x, n, sum);
-
-    author();
     return 0;
 }

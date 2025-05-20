@@ -1,8 +1,6 @@
-#include "shreaoskar.h"
 #include <stdio.h>
 
-int main(int argc, char **argv) {
-    intro(argv[0]);
+int main() {
     unsigned int termCount, iterator;
     unsigned int first = 0, second = 1, next;
 
@@ -23,7 +21,5 @@ int main(int argc, char **argv) {
         }
         printf("%u ", next);
     }
-
-    author();
     return 0;
 }

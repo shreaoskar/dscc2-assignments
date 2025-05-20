@@ -1,8 +1,6 @@
-#include "shreaoskar.h"
 #include <stdio.h>
 
-int main(int argc, char **argv) {
-    intro(argv[0]);
+int main() {
     int i, j, n, num = 1;
 
     printf("Enter number of rows: ");
@@ -15,7 +13,5 @@ int main(int argc, char **argv) {
         }
         printf("\n");
     }
-
-    author();
     return 0;
 }

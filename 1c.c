@@ -1,8 +1,6 @@
 #include <stdio.h>
-#include "shreaoskar.h"
 
-int main(int argc, char **argv) {
-    intro(argv[0]);
+int main() {
     float side1, side2, side3;
 
     printf("Enter the lengths of the three sides of the triangle: ");
@@ -21,7 +19,5 @@ int main(int argc, char **argv) {
     } else {
         printf("The given sides do not form a valid triangle.");
     }
-
-    author();
     return 0;
 }

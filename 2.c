@@ -1,8 +1,6 @@
 #include <stdio.h>
-#include "shreaoskar.h"
 
-int main(int argc, char **argv) {
-    intro(argv[0]);
+int main() {
     int a, b;
     printf("\nEnter two numbers: ");
     scanf("%d%d", &a, &b);
@@ -36,6 +34,5 @@ int main(int argc, char **argv) {
     };
 
     printf("\nResult: %d", result);
-    author();
     return 0;
 }

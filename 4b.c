@@ -1,8 +1,6 @@
 #include <stdio.h>
-#include "shreaoskar.h"
 
-int main(int argc, char **argv) {
-    intro(argv[0]);
+int main() {
     int n, iterator;
     int sum = 0;
 
@@ -14,7 +12,5 @@ int main(int argc, char **argv) {
     }
 
     printf("The sum of the series is: %d", sum);
-
-    author();
     return 0;
 }

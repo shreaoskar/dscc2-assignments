@@ -1,11 +1,9 @@
 #include <math.h>
 #include <stdio.h>
-#include "shreaoskar.h"
 
 unsigned int count_digit(int number);
 
-int main(int argc, char **argv) {
-    intro(argv[0]);
+int main() {
     int number, count, tmp, x, y;
     printf("Enter your number: ");
     scanf("%d", &number);
@@ -23,8 +21,6 @@ int main(int argc, char **argv) {
     } else {
         printf("Your number is not an Armstrong.");
     }
-
-    author();
     return 0;
 }
 

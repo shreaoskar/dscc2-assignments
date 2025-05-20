@@ -1,9 +1,7 @@
 #include <stdio.h>
 #include <math.h>
-#include "shreaoskar.h"
 
-int main(int argc, char **argv) {
-    intro(argv[0]);
+int main() {
     double a, b, c;
     double discriminant, realPart, imaginaryPart, root1, root2;
 
@@ -34,7 +32,5 @@ int main(int argc, char **argv) {
         printf("Root 1 = %.2lf + %.2lfi\n", realPart, imaginaryPart);
         printf("Root 2 = %.2lf - %.2lfi\n", realPart, imaginaryPart);
     }
-
-    author();
     return 0;
 }
