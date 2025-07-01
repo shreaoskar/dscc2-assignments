@@ -138,23 +138,6 @@ complexNumber additionComplex(complexNumber a, complexNumber b) {
     return result;
 }
 
-typedef struct {
-    int day;
-    int month;
-    int year;
-} date;
-
-typedef struct {
-    int EmpID;
-    char *EmpName;
-    date DOJ;
-    float Salary;
-} Employee;
-
-void initials(char *name) {
-    /* int length = 0, spaces = 0;
-    char *tmp = name; */
-}
 int main() {
     return 0;
 }

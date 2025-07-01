@@ -30,7 +30,7 @@ int main() {
     int tmp;
     for (i = 0; i < count - 1; i++) {
         for (j = i + 1; j < count; j++){
-            if (array[i] < array[j]) {
+            if (array[i] > array[j]) {
                 tmp = array[j];
                 array[j] = array[i];
                 array[i] = tmp;
