@@ -1,4 +1,5 @@
 
+#include "student.h"
 #include <limits.h>
 #include <stdio.h>
 typedef struct {
@@ -21,6 +22,7 @@ int main() {
 
     if (!(count > 0 && count < UINT_MAX)) {
         fprintf(stderr, "\n[ ERROR ] Employee count out of bounds\n");
+        author();
         return 1;
     }
 
@@ -36,6 +38,7 @@ int main() {
     src = fopen(sourcefile, "r");
     if (src == NULL) {
         fprintf(stderr, "\n[ ERROR ] Cannot open source file\n");
+        author();
         return 2;
     }
 
@@ -80,5 +83,6 @@ int main() {
         printf("\nEmployee with ID %d not found\n", searchID);
     }
 
+    author();
     return 0;
 }

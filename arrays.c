@@ -114,6 +114,7 @@ void swapNumbers(int *a, int *b) {
     *b = tmp;
 }
 
+// Print result matrix
 int charCount(char *str) {
     int count = 0;
     char *string = str;

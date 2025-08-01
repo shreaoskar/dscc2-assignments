@@ -1,3 +1,4 @@
+#include "student.h"
 #include <ctype.h>
 #include <stdio.h>
 #define MAX 1024
@@ -16,6 +17,7 @@ int main() {
     src = fopen(sourceFile, "r");
     if (src == NULL) {
         fprintf(stderr, "Error opening source file\n");
+        author();
         return 1;
     }
 
@@ -23,6 +25,7 @@ int main() {
     if (dest == NULL) {
         fprintf(stderr, "\nError opening destination file\n");
         fclose(src);
+        author();
         return 1;
     }
 
@@ -35,5 +38,6 @@ int main() {
     fclose(src);
     fclose(dest);
 
+    author();
     return 0;
 }
